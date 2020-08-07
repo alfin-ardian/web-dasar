@@ -1,0 +1,140 @@
+.w3l-gallery2 img.insta-pic {
+  border-radius: var(--card-curve);
+}
+
+.w3l-gallery2 a.follow-insta-button {
+  margin: 0 auto;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+  border: 1px solid #eee;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-curve);
+}
+
+.w3l-gallery2 .js-img-viwer {
+  position: relative;
+  border: 8px solid #fff;
+}
+
+.w3l-gallery2 .js-img-viwer:hover .content-overlay {
+  opacity: 1;
+}
+
+.w3l-gallery2 .js-img-viwer .content-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  border-radius: 4px;
+}
+
+.w3l-gallery2 .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.w3l-gallery2 .js-img-viwer:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.w3l-gallery2 .content-details h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.w3l-gallery2 .content-details p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.w3l-gallery2 .fadeIn-bottom {
+  top: 80%;
+}
+
+.w3l-gallery2 .fadeIn-top {
+  top: 20%;
+}
+
+.w3l-gallery2 .fadeIn-left {
+  left: 20%;
+}
+
+.w3l-gallery2 .fadeIn-right {
+  left: 80%;
+}
+
+h3.global-title {
+  font-size: 45px;
+  color: var(--title-color);
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  line-height: 1;
+}
+
+h3.global-white {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  h3.global-title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3.global-title {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h3.global-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
